@@ -1,5 +1,5 @@
 # todo-api-nodejs
-Projeto com exposição de API de lista simples com Nodejs, mongodb, mongoose, env-cmd, jest e supertest.
+Projeto com exposição de API de TODO utilizando Nodejs, mongodb, mongoose, env-cmd, jest e supertest.
 
 ## Para executar é necessário configurar as dependências:
 `npm i`
