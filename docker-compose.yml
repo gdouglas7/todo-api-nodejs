@@ -1,0 +1,12 @@
+web:
+    build: .
+    links: 
+        - mongodb
+    ports:
+        - "3000"
+
+mongodb:
+    image: mongo
+    volumes: 
+        - /var/mongo/data:/data
+

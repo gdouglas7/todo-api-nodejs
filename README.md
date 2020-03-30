@@ -1,11 +1,10 @@
 # todo-api-nodejs
 Projeto com exposição de API de TODO utilizando Nodejs, mongodb, mongoose, env-cmd, jest e supertest.
 
-## Para executar é necessário configurar as dependências:
-`npm i`
+## Para executar é necessário ter o docker instalado e dentro da pasta do projeto rodar o comando:
+`docker-compose up -d .`
 
-## Em seguida dê o start na API com o comando:
+## Outros comandos aceitos para start da aplicação são os seguinte:
 `npm start` ou `npm dev`
-
-## Para rodar os testes execute o comando:
+### Para rodar os testes o camando é o:
 `npm test`
