@@ -1,10 +1,26 @@
 # todo-api-nodejs
-Projeto com exposição de API de TODO utilizando Nodejs, mongodb, mongoose, env-cmd, jest e supertest.
+API Project with TODO list endpoints using Nodejs, mongodb, mongoose, jest e supertest
 
-## Para executar é necessário ter o docker instalado e dentro da pasta do projeto rodar o comando:
+### Purpose:
+Only for study Node Js, how it works and some libraries functionality
+
+### How to build and run:
+#### To run the project locally is necessary to have Docker and Docker Compose installed and run the follow command:
 `docker-compose up -d`
 
-## Outros comandos aceitos para start da aplicação são os seguinte:
-`npm start` ou `npm dev`
-### Para rodar os testes o camando é o:
-`npm test`
+> To run the tests in the app you must change the target build of the web service in the docker-compose.yml from `dev` to `test`.
+
+#### Request examples:
+##### Creating task
+```shell
+curl --location --request POST 'localhost:3000/tasks' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "description": "TODO the stuff 3233",
+    "completed": false
+}'
+```  
+##### Getting tasks
+```shell
+curl --location --request GET 'localhost:3000/tasks'
+```  

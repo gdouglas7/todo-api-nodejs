@@ -4,9 +4,8 @@
   "description": "TODO API",
   "main": "app.js",
   "scripts": {
-    "start": "env-cmd -f ./config/dev.env nodemon src/index.js",
-    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
-    "test": "env-cmd -f ./config/test.env jest --watchAll"
+    "start": "nodemon src/index.js --inspect=0.0.0.0:9229",
+    "test": "jest --watchAll"
   },
   "keywords": [
     "George"
@@ -20,7 +19,6 @@
     "validator": "^12.2.0"
   },
   "devDependencies": {
-    "env-cmd": "^10.1.0",
     "jest": "^25.1.0",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
